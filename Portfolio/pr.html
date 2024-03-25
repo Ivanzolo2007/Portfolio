@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="pr.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <h1>My Portfolio</h1>
+        <button class="dark-mode-toggle">Dark Mode</button>
+      </div>
+      <div class="sidebar" id="sidebar">
+              <div class="container">
+        <input type="text" id="searchInput" placeholder="Search projects" />
+      </div>
+      <a href="#" onclick="closeSidebar()">Close</a>
+    </div>
+    <div class="content">
+      <button onclick="openSidebar()">Open Sidebar</button>
+    </div>
+    </nav>
+    </aside>
+    <main class="projects">
+      <div class="container">
+        <div class="project" data-category="web">
+          <img src="img/Снимок экрана 2024-03-25 124819.png" alt="ColorFlipper" />
+          <a href="file:///C:/Users/Beksultan/Desktop/projects/colorFlipper/project/index.html">ColorFlipper</a>
+        </div>
+        <div class="project" data-category="mobile">
+          <img src="img/Снимок экрана 2024-03-25 125135.png" alt="Modal" />
+          <a href="file:///C:/Users/Beksultan/Desktop/projects/Modal/modal.html">Modal</a>
+        </div>
+        <div class="project" data-category="mobile">
+          <img src="img/Снимок экрана 2024-03-25 125344.png" alt="Tabs" />
+          <a href="file:///C:/Users/Beksultan/Desktop/projects/Tabs/tabs.html">Tabs</a>
+        </div>
+        <div class="project" data-category="mobile">
+          <img src="img/Снимок экрана 2024-03-25 125707.png" alt="Vidoe Player" />
+          <a href="file:///C:/Users/Beksultan/Desktop/projects/Video%20player/vid.html">Vidoe Player</a>
+        </div>
+        <div class="project" data-category="mobile">
+          <img src="img/Снимок экрана 2024-03-25 125909.png" alt="Side Bar" />
+          <a href="file:///C:/Users/Beksultan/Desktop/projects/Slide%20Bar/slide.html">Side Bar</a>
+        </div>
+        <div class="project" data-category="mobile">
+          <img src="img/Снимок экрана 2024-03-25 130142.png" alt="Navbar" />
+          <a href="file:///C:/Users/Beksultan/Desktop/projects/Navbar/nav.html">Navbar</a>
+        </div>
+      </div>
+    </main>
+    <footer class="feedback">
+      <div class="container">
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'feedbackForm')">
+            Feedback
+          </button>
+          <button class="tablinks" onclick="openTab(event, 'contactForm')">
+            Contact
+          </button>
+        </div>
+        <div id="feedbackForm" class="tabcontent">
+          <h2>Feedback Form</h2>
+          <!-- Feedback Form Here -->
+        </div>
+        <div id="contactForm" class="tabcontent">
+          <h2>Contact Form</h2>
+          <!-- Contact Form Here -->
+        </div>
+      </div>
+    </footer>
+    <div id="hireModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Hire Me</h2>
+        <p>Contact me to discuss your project!</p>
+      </div>
+    </div>
+    <script src="pr.js"></script>
+  </body>
+</html>
